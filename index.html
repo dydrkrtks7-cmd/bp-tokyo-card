@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>교육정보 전문 포트폴리오 저널</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #0f172a;
+      --accent-color: #10b981;
+      --muted-color: #64748b;
+      --border-color: #e2e8f0;
+      --font-swiss: 'Inter', 'Noto Sans KR', sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: var(--font-swiss);
+      line-height: 1.7;
+      letter-spacing: -0.01em;
+      padding: 0 24px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 0;
+    }
+    header {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 24px;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      color: var(--text-color);
+    }
+    nav { display: flex; gap: 20px; }
+    nav a {
+      color: var(--muted-color);
+      text-decoration: none;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+    nav a:hover { color: var(--accent-color); }
+    main { padding-bottom: 60px; }
+    .meta-tag {
+      font-size: 0.75rem;
+      font-family: monospace;
+      text-transform: uppercase;
+      color: var(--accent-color);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.03em;
+      color: var(--text-color);
+      margin-bottom: 32px;
+    }
+    .content {
+      font-size: 1.05rem;
+      color: var(--text-color);
+      margin-bottom: 48px;
+      font-weight: 300;
+    }
+    .content p { margin-bottom: 20px; }
+    .juice-link {
+      color: var(--accent-color);
+      text-decoration: none;
+      border-bottom: 1px solid var(--accent-color);
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+    .juice-link:hover {
+      background-color: rgba(16, 185, 129, 0.05);
+    }
+    .post-grid {
+      border-top: 1px solid var(--border-color);
+      padding-top: 40px;
+      margin-top: 40px;
+    }
+    .grid-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted-color);
+      margin-bottom: 24px;
+    }
+    .posts-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .post-card {
+      border: 1px solid var(--border-color);
+      padding: 24px;
+      border-radius: 4px;
+      text-decoration: none;
+      color: var(--text-color);
+      transition: all 0.2s ease;
+    }
+    .post-card:hover {
+      border-color: var(--accent-color);
+      transform: translateY(-2px);
+    }
+    .post-card h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .post-card p {
+      font-size: 0.9rem;
+      color: var(--muted-color);
+      font-weight: 300;
+    }
+    footer {
+      border-top: 1px solid var(--border-color);
+      padding-top: 24px;
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: var(--muted-color);
+    }
+    footer a { color: var(--muted-color); text-decoration: none; }
+    footer a:hover { color: var(--accent-color); }
+    @media(max-width: 768px) {
+      header { flex-direction: column; align-items: flex-start; gap: 16px; }
+      h1 { font-size: 1.8rem; }
+    }
+  </style>
+<meta property="og:image" content="og-image.svg">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="/" class="logo">JOURNAL</a>
+      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
+    </header>
+    <main>
+      <div class="meta-tag">SWISS ACCENTED GRID SYSTEM</div>
+      <h1>교육정보 전문 포트폴리오 저널</h1>
+      <div class="content">
+        웰컴 투 <strong>교육정보</strong> 정보 아카이브 저널입니다. 본 공간은 교육정보 분야의 깊이 있는 전문 지식과 실전 가이드, 그리고 유용한 관련 정보들을 꼼꼼하게 집대성한 고품격 PBN 정보 허브입니다.<br><br>아래의 엄선된 에디토리얼 아카이브 리스트를 통해 다양한 인사이트를 확인하시고 삶과 비즈니스의 격을 넓혀보시기 바랍니다.
+      </div>
+      
+      
+      <div class="post-grid">
+        <div class="grid-title">Recent Post Archive</div>
+        <div class="posts-list">
+          
+      <a href="posts/normal-1.html" class="post-card">
+        <h3>교육정보: 초등학생 영어 홈스쿨링 교재</h3>
+        <p>사교육의 비싼 비용 부담에서 벗어나 집에서 부모와 아이가 정서적 교감을 나누며 자연스럽게 언어 감각을 깨울 수 있는 초등학생 영어 홈스쿨링 교재 선택 요령은 많은 학부모들의 큰 관심사입니다. 홈스쿨링의 핵심은 아이가 영어를 지루한 공부로 받아들이지 않고, 재미있는 놀이...</p>
+      </a>
+    
+
+      <a href="posts/juice-1.html" class="post-card">
+        <h3>교육정보 마니아들에게 추천하는 소자본 창업 대출 조건 알짜배기 이용 가이드</h3>
+        <p>우리 아이의 소중한 미래와 탄탄한 잠재력을 깨우기 위해 고품질의 교육정보를 면밀히 수집하고 분석하는 현명한 부모님들이라면, 교육 인프라를 지탱하는 재정적 지혜와 안정적인 가계 운영의 맥락도 함께 고민해 보셔야 합니다. 장기적인 자녀 교육 자금을 튼튼하게 마련하는 것은 ...</p>
+      </a>
+    
+
+      <a href="posts/juice-2.html" class="post-card">
+        <h3>교육정보 마니아들에게 추천하는 소자본 창업 대출 조건 알짜배기 이용 가이드</h3>
+        <p>풍부한 최신 교육정보와 올바른 홈스쿨링 철학을 기반으로 아이의 지적인 성장을 섬세하게 가이드하는 지적인 교육 마니아들은 정보의 정확성과 최적화된 설계 시스템을 최우선 가치로 내세웁니다. 이렇듯 뛰어난 지적 분석력과 체계적인 탐구 정신은 우리의 소중한 자산 흐름과 가계 ...</p>
+      </a>
+    
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>&copy; 2026 JOURNAL. ALL RIGHTS RESERVED.</div>
+      <div>
+        <a href="sitemap.xml">SITEMAP</a> | 
+        <a href="#">PRIVACY</a> | 
+        <a href="#">DISCLAIMER</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
