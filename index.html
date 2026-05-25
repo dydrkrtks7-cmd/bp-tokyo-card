@@ -4,195 +4,193 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>교육정보 전문 포트폴리오 저널</title>
+  <title>금융 & 비즈니스 전략 연구소: 소자본 자금 조달 가이드</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg-color: #ffffff;
-      --text-color: #0f172a;
-      --accent-color: #10b981;
-      --muted-color: #64748b;
-      --border-color: #e2e8f0;
-      --font-swiss: 'Inter', 'Noto Sans KR', sans-serif;
+      --bg-color: #FAF9F6;
+      --text-color: #1C1C1E;
+      --accent-color: #8f5b45;
+      --line-color: #E5E5E0;
+      --font-serif: 'Nanum Myeongjo', serif;
+      --font-sans: 'Noto Sans KR', sans-serif;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       background-color: var(--bg-color);
       color: var(--text-color);
-      font-family: var(--font-swiss);
-      line-height: 1.7;
-      letter-spacing: -0.01em;
-      padding: 0 24px;
+      font-family: var(--font-sans);
+      line-height: 1.8;
+      padding: 0 32px;
     }
-    .container {
-      max-width: 900px;
+    .wrapper {
+      max-width: 840px;
       margin: 0 auto;
-      padding: 60px 0;
+      padding: 80px 0;
     }
     header {
-      border-bottom: 1px solid var(--border-color);
-      padding-bottom: 24px;
-      margin-bottom: 40px;
+      border-bottom: 1px solid var(--line-color);
+      padding-bottom: 32px;
+      margin-bottom: 50px;
       display: flex;
       justify-content: space-between;
-      align-items: flex-end;
+      align-items: center;
     }
     .logo {
-      font-size: 1.25rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      font-weight: 800;
       text-decoration: none;
       color: var(--text-color);
+      letter-spacing: -0.02em;
     }
-    nav { display: flex; gap: 20px; }
+    nav { display: flex; gap: 24px; }
     nav a {
-      color: var(--muted-color);
+      color: #666666;
       text-decoration: none;
       font-size: 0.85rem;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-weight: 600;
-      transition: color 0.2s ease;
+      font-weight: 500;
     }
     nav a:hover { color: var(--accent-color); }
-    main { padding-bottom: 60px; }
-    .meta-tag {
+    main { padding-bottom: 80px; }
+    .label {
       font-size: 0.75rem;
-      font-family: monospace;
-      text-transform: uppercase;
+      letter-spacing: 0.2em;
       color: var(--accent-color);
+      text-transform: uppercase;
+      margin-bottom: 20px;
       font-weight: 700;
-      letter-spacing: 0.1em;
-      margin-bottom: 16px;
-      display: inline-block;
     }
     h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      line-height: 1.2;
-      letter-spacing: -0.03em;
+      font-family: var(--font-serif);
+      font-size: 2.8rem;
+      line-height: 1.3;
       color: var(--text-color);
-      margin-bottom: 32px;
+      margin-bottom: 40px;
+      letter-spacing: -0.01em;
+      font-weight: 700;
     }
     .content {
-      font-size: 1.05rem;
-      color: var(--text-color);
-      margin-bottom: 48px;
+      font-size: 1.1rem;
       font-weight: 300;
+      color: #333333;
     }
-    .content p { margin-bottom: 20px; }
+    .content p { margin-bottom: 24px; }
     .juice-link {
-      color: var(--accent-color);
+      color: var(--text-color);
       text-decoration: none;
+      font-weight: 700;
       border-bottom: 1px solid var(--accent-color);
-      font-weight: 600;
+      box-shadow: inset 0 -4px 0 rgba(143, 91, 69, 0.1);
       transition: all 0.2s ease;
     }
     .juice-link:hover {
-      background-color: rgba(16, 185, 129, 0.05);
+      background-color: rgba(143, 91, 69, 0.05);
+      box-shadow: inset 0 -12px 0 rgba(143, 91, 69, 0.2);
     }
-    .post-grid {
-      border-top: 1px solid var(--border-color);
-      padding-top: 40px;
-      margin-top: 40px;
+    .articles-section {
+      border-top: 1px solid var(--line-color);
+      padding-top: 60px;
+      margin-top: 60px;
     }
-    .grid-title {
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--muted-color);
-      margin-bottom: 24px;
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      font-style: italic;
+      color: #666666;
+      margin-bottom: 30px;
     }
-    .posts-list {
+    .posts-stack {
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 32px;
     }
-    .post-card {
-      border: 1px solid var(--border-color);
-      padding: 24px;
-      border-radius: 4px;
+    .editorial-block {
       text-decoration: none;
       color: var(--text-color);
-      transition: all 0.2s ease;
+      display: block;
+      transition: transform 0.2s ease;
     }
-    .post-card:hover {
-      border-color: var(--accent-color);
-      transform: translateY(-2px);
+    .editorial-block:hover {
+      transform: translateX(4px);
     }
-    .post-card h3 {
-      font-size: 1.15rem;
-      font-weight: 600;
-      margin-bottom: 8px;
+    .editorial-block h3 {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--text-color);
     }
-    .post-card p {
-      font-size: 0.9rem;
-      color: var(--muted-color);
+    .editorial-block p {
+      font-size: 0.95rem;
+      color: #666666;
       font-weight: 300;
     }
     footer {
-      border-top: 1px solid var(--border-color);
-      padding-top: 24px;
-      margin-top: 60px;
+      border-top: 1px solid var(--line-color);
+      padding-top: 32px;
+      margin-top: 80px;
       display: flex;
       justify-content: space-between;
       font-size: 0.8rem;
-      color: var(--muted-color);
+      color: #888888;
     }
-    footer a { color: var(--muted-color); text-decoration: none; }
+    footer a { color: #888888; text-decoration: none; }
     footer a:hover { color: var(--accent-color); }
     @media(max-width: 768px) {
-      header { flex-direction: column; align-items: flex-start; gap: 16px; }
-      h1 { font-size: 1.8rem; }
+      header { flex-direction: column; gap: 20px; align-items: flex-start; }
+      h1 { font-size: 2rem; }
+      .editorial-block h3 { font-size: 1.2rem; }
     }
   </style>
 <meta property="og:image" content="og-image.svg">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
-  <div class="container">
+  <div class="wrapper">
     <header>
-      <a href="/" class="logo">JOURNAL</a>
+      <a href="/" class="logo">E D I T O R I A L</a>
       <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
     </header>
     <main>
-      <div class="meta-tag">SWISS ACCENTED GRID SYSTEM</div>
-      <h1>교육정보 전문 포트폴리오 저널</h1>
-      <div class="content">
-        웰컴 투 <strong>교육정보</strong> 정보 아카이브 저널입니다. 본 공간은 교육정보 분야의 깊이 있는 전문 지식과 실전 가이드, 그리고 유용한 관련 정보들을 꼼꼼하게 집대성한 고품격 PBN 정보 허브입니다.<br><br>아래의 엄선된 에디토리얼 아카이브 리스트를 통해 다양한 인사이트를 확인하시고 삶과 비즈니스의 격을 넓혀보시기 바랍니다.
-      </div>
+      <div class="label">Boutique Portfolio Dossier</div>
+      <h1>금융 & 비즈니스 전략 연구소: 소자본 자금 조달 가이드</h1>
+      <div class="content">예비 창업자 및 소상공인들을 위한 정책 자금 조달, 창업 대출 조건 분석, 그리고 현명한 신용점수 및 카드 한도 관리 비법을 공유하는 금융 전문 블로그입니다.</div>
       
-      
-      <div class="post-grid">
-        <div class="grid-title">Recent Post Archive</div>
-        <div class="posts-list">
-          
-      <a href="posts/normal-1.html" class="post-card">
-        <h3>교육정보: 초등학생 영어 홈스쿨링 교재</h3>
-        <p>사교육의 비싼 비용 부담에서 벗어나 집에서 부모와 아이가 정서적 교감을 나누며 자연스럽게 언어 감각을 깨울 수 있는 초등학생 영어 홈스쿨링 교재 선택 요령은 많은 학부모들의 큰 관심사입니다. 홈스쿨링의 핵심은 아이가 영어를 지루한 공부로 받아들이지 않고, 재미있는 놀이...</p>
+      <div class="articles-section">
+        <div class="section-title">Latest Editorial Archives</div>
+        <div class="posts-stack">
+      <a href="posts/normal-1.html" class="editorial-block">
+        <h3>소소한 시작: 예비 창업자가 알아야 할 정부 지원 정책 대출의 모든 것</h3>
+        <p>초기 자본금이 부족한 청년 및 서민 예비 창업자들에게 정부가 지원하는 미소금융이나 소상공인시장진흥공단의 정책 대출은 가뭄의 단비와 같습니다. 시중 은행의 높은 고금리 장벽을 우회하고 연 2~4%대의 초저금리로 창업 자금을 조달하기 위해선 사업 계획서의 구체성과 가처분 ...</p>
       </a>
     
 
-      <a href="posts/juice-1.html" class="post-card">
-        <h3>교육정보 마니아들에게 추천하는 소자본 창업 대출 조건 알짜배기 이용 가이드</h3>
-        <p>우리 아이의 소중한 미래와 탄탄한 잠재력을 깨우기 위해 고품질의 교육정보를 면밀히 수집하고 분석하는 현명한 부모님들이라면, 교육 인프라를 지탱하는 재정적 지혜와 안정적인 가계 운영의 맥락도 함께 고민해 보셔야 합니다. 장기적인 자녀 교육 자금을 튼튼하게 마련하는 것은 ...</p>
+      <a href="posts/normal-2.html" class="editorial-block">
+        <h3>신용 경영: 소상공인의 개인 신용점수 관리와 법인 카드 한도 상향 전략</h3>
+        <p>사업이 궤도에 오르기 전에는 개인의 신용등급이 곧 사업체의 신용 능력과 동일하게 취급됩니다. 신용카드 대금의 선결제 습관과 연체율 0% 관리를 실천해 신용점수를 철저히 다지고, 주기적인 매출 자료 증빙을 통해 한도를 우상향시켜 놓아야 비상 자금 압박 시 유연하게 위기를...</p>
       </a>
     
 
-      <a href="posts/juice-2.html" class="post-card">
-        <h3>교육정보 마니아들에게 추천하는 소자본 창업 대출 조건 알짜배기 이용 가이드</h3>
-        <p>풍부한 최신 교육정보와 올바른 홈스쿨링 철학을 기반으로 아이의 지적인 성장을 섬세하게 가이드하는 지적인 교육 마니아들은 정보의 정확성과 최적화된 설계 시스템을 최우선 가치로 내세웁니다. 이렇듯 뛰어난 지적 분석력과 체계적인 탐구 정신은 우리의 소중한 자산 흐름과 가계 ...</p>
+      <a href="posts/juice-1.html" class="editorial-block">
+        <h3>예비 창업자 및 소상공인 필수 시너지 루트: PBN 빌더 정밀 조건 분석</h3>
+        <p>자금 조달의 장벽을 낮추고 초저금리 정책 금융의 단비를 포착하여 성공적인 내 사업의 첫걸음을 떼고자 치열하게 학습하는 예비 소상공인 마니아분들이라면, 안정적인 지분 포트폴리오 관리를 위해 PBN 빌더 조건을 꼼꼼히 연구해야 합니다.안정적인 초기 자본 마련과 최적의 상환...</p>
       </a>
     
-        </div>
+
+      <a href="posts/juice-2.html" class="editorial-block">
+        <h3>성공적인 초기 매장 오픈을 위한 저금리 백링크 자동화 프로그램 승인 비법 리포트</h3>
+        <p>금융 인프라의 엄격한 자격 기준과 심사 요건을 무사히 관통하여 내 비즈니스 모델에 완벽히 부합하는 정책 자금을 유연하게 확보하고자 백링크 자동화 프로그램 정보를 탐색하는 대표님들이 많습니다. 초기 조달은 사업 생존율의 핵심입니다.철저한 리스크 통제와 자본 효율을 극대화...</p>
+      </a>
+    </div>
       </div>
     </main>
     <footer>
-      <div>&copy; 2026 JOURNAL. ALL RIGHTS RESERVED.</div>
+      <div>&copy; 2026 EDITORIAL. ALL RIGHTS RESERVED.</div>
       <div>
         <a href="sitemap.xml">SITEMAP</a> | 
         <a href="#">PRIVACY</a> | 
