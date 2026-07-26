@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>파일 구조에 묻힌 기획안, 2010년 여름의 다크소울 데모를 긁어내다</title>
+  <link rel="canonical" href="https://card-hakkoku.store/posts/field_note-003-tuvvay.html">
+  <style>
+    body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+    h1 { font-family: serif; color: #111; margin-bottom: 0.5em; }
+    h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; color: #222; }
+    h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; color: #444; }
+    p { margin: 0 0 1em; }
+    a { color: #3182ce; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../index.html">← 목록으로 돌아가기</a>
+  </header>
+  <main>
+    <h1>파일 구조에 묻힌 기획안, 2010년 여름의 다크소울 데모를 긁어내다</h1>
+    <article>
+      <p>---</p>
+<p>2010년 여름, 나는 처음으로 다크소울의 내부 파일 구조를 열어봤다. XGD2 이미지에서 추출한 디렉토리 트리가 화면을 가득 채웠고, 그 안에 최종판과 전혀 다른 맵 명세가 숨어 있었다. 그 moment, 이 게임이 어떤 방향으로 흘러갈지 아무도 몰랐던 시점의 흔적을 손에 쥔 거라고 느꼈다.</p>
+<p>## 데모 버전에서만 살아 있던 'UNUSED_MAP_07'</p>
+<p>정식 출시 전 돌리던 데모 빌드의 맵 리스트에는 UNUSED_MAP_07이 포함되어 있었다. 정식판 해당 번호는 불타는 고성 쪽으로 배정됐지만, 데모 당시에는 완전히 다른 좌표 계열이 할당돼 있었다. 좌표값이 다르다는 건 같은 번호라도 실제 지형이나 구조가 완전히 뒤바뀌었다는 뜻이다. 나는 그 좌표를 베이스로 맵 에디터 시뮬레이션을 돌려봤고, 결과적으로 지금의 불燃烧 고성보다 수직 구조가 더 복잡한 레이아웃이 나왔다.</p>
+<p>## 미사용 무기 모델의 기획 의도 추적</p>
+<p>데이터 마이너들이 발견한 미사용 무기 모델 중 하나는 "TENTACLE_SWORD"라는 파일명이 붙어 있었다. 이 모델은 최종판에 존재하지 않는 기형적인 곡검 형태였고, 본체에 촉수 비슷한 메쉬가 뒤엉켜 있었다. 원래 기획은 플레이어가 특정 조건을 충족했을 때 장착할 수 있는 보스 드롭 무기였을 가능성이 높다. 데모 데이터베이스에 이 무기의 스탯 프레임이 남아 있는데, 정작 해당 무기를 드롭하는 몬스터의 시퀀스가 파일 트리에서 잘려나간 흔적이 있었다.</p>
+<p>## 적 배치에서 드러난 전투 철학 변화</p>
+<p>데모 빌드의 적 스폰 스크립트는 정식판과 방향이 달랐다. 특히 성 내부 구간에서 괴수 두 마리가 동시간에 리스폰되도록 설정된 구간이 하나 있었다. 최종판에서는 이 구간의 괴수 한 마리가 잘렸고,代わり에 아이템 상자가 놓였다. 그 괴수의 AI 패턴이 아직 불완전했기 때문인지, 아니면 플레이어 부담을 줄이려는 의도였는지는 확실하지 않다. 다만 파일 구조만 놓고 보면 전투 밀도를 의식적으로 낮춘 흔적이 분명히 있다.</p>
+<p>---</p>
+<p>나는 이 자료를 아카이브용으로만 보관한다. 실제로 활용할 일은 없겠지만, 이렇게 묻혀버린 기획 흔적을 누군가는 언젠가 다시 꺼내볼 거라 믿는다. 데이터 마이닝이란 결국 시간의 잔해를 발굴하는 일이라고 생각한다.</p>
+<p><a href="https://go-apgujeong-nrb.xyz/" target="_blank" rel="noopener noreferrer">압구정 룸싸롱</a></p>
+    </article>
+  </main>
+</body>
+</html>
