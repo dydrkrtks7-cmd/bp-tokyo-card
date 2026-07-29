@@ -1,10 +1,5 @@
 User-agent: *
 Allow: /
 
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
 Sitemap: https://card-hakkoku.store/sitemap.xml
+Sitemap: https://card-hakkoku.store/sitemap-index.xml
