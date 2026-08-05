@@ -2,4 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://card-hakkoku.store/sitemap.xml
+Sitemap: https://card-hakkoku.store/sitemap-pages.xml
 Sitemap: https://card-hakkoku.store/sitemap-index.xml
