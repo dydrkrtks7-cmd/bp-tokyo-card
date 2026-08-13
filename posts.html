@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (1/3) · tokyo-card</title>
+  <meta name="description" content="tokyo-card에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://card-hakkoku.store/posts.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+:root{--primary:#4a9eff;--accent:#7bc8ff;--bg:#0a0f1e;--bg2:#0f1628;--bg3:#141d35;--text:#d0d8f0;--muted:#6070a0;--border:#1e2840;--radius:10px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:var(--primary);text-decoration:none}a:hover{color:var(--accent)}
+header{position:sticky;top:0;z-index:100;background:rgba(10,15,30,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 5%}
+.hi{display:flex;align-items:center;justify-content:space-between;height:60px;max-width:1200px;margin:0 auto}
+.logo{font-size:1.15rem;font-weight:800;color:var(--accent)}
+.logo small{color:var(--muted);font-weight:400;font-size:.78rem;margin-left:6px}
+nav a{font-size:.86rem;color:var(--muted);margin-left:20px;transition:.2s}
+nav a:hover{color:var(--accent)}
+.hero{min-height:60vh;display:flex;align-items:center;padding:72px 5%;background:linear-gradient(135deg,#0a0f1e,#141d35);position:relative}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 30%,rgba(74,158,255,.08),transparent 70%)}
+.hc{max-width:800px;position:relative;z-index:1}
+.badge{display:inline-flex;align-items:center;gap:6px;background:rgba(74,158,255,.12);border:1px solid rgba(74,158,255,.25);border-radius:50px;padding:4px 12px;font-size:.78rem;color:var(--primary);margin-bottom:20px}
+.hc h1{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;line-height:1.2;letter-spacing:-.5px;margin-bottom:14px}
+.hc h1 em{color:var(--accent);font-style:normal}
+.hsub{font-size:.95rem;color:var(--muted);margin-bottom:28px;line-height:1.8}
+section{padding:64px 5%}
+.si{max-width:1200px;margin:0 auto}
+.sh{text-align:center;margin-bottom:44px}
+.stag{display:inline-block;background:rgba(74,158,255,.1);color:var(--primary);font-size:.74rem;font-weight:700;padding:3px 10px;border-radius:50px;letter-spacing:1px;margin-bottom:10px}
+.sh h2{font-size:clamp(1.4rem,2.8vw,2rem);font-weight:900}
+.sh p{color:var(--muted);margin-top:8px;font-size:.9rem}
+.posts{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.post{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:24px;transition:.3s;position:relative;overflow:hidden}
+.post::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--primary),var(--accent))}
+.post:hover{border-color:var(--primary);transform:translateY(-3px)}
+.ptag{font-size:.76rem;color:var(--primary);font-weight:700;margin-bottom:8px;text-transform:uppercase;letter-spacing:.5px}
+.post h3{font-size:1rem;font-weight:800;margin-bottom:10px;line-height:1.4}
+.post h3 a{color:var(--text)}
+.post h3 a:hover{color:var(--accent)}
+.post p{font-size:.86rem;color:var(--muted);line-height:1.7}
+.pdate{font-size:.78rem;color:var(--muted);margin-top:12px}
+.article{max-width:800px;margin:0 auto;padding:64px 5%}
+.article h1{font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:900;margin-bottom:20px;line-height:1.3}
+.article .meta{color:var(--muted);font-size:.85rem;margin-bottom:32px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+.article h2{font-size:1.3rem;font-weight:800;margin:32px 0 14px;color:var(--accent)}
+.article h3{font-size:1.1rem;font-weight:700;margin:24px 0 10px}
+.article p{font-size:.95rem;color:var(--text);line-height:1.9;margin-bottom:18px}
+.article ul{padding-left:1.5em;margin-bottom:18px}
+.article li{margin-bottom:8px;font-size:.93rem;color:var(--text)}
+.article blockquote{border-left:3px solid var(--primary);padding:12px 20px;background:var(--bg2);border-radius:0 8px 8px 0;margin:24px 0;color:var(--muted);font-style:italic}
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:32px 5% 20px;text-align:center}
+.fbot{font-size:.8rem;color:var(--muted)}
+@media(max-width:768px){nav{display:none}}
+</style>
+  <meta property="og:title" content="글 목록 (1/3) · tokyo-card">
+  <meta property="og:description" content="tokyo-card에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://card-hakkoku.store/posts.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header><div class="hi"><div class="logo">고신용 도메인</div><nav><a href="index.html">홈</a></nav></div></header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 54개 · 1/3 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-001-1p5moz2.html">비너스 확장 2인플 밸런스 붕괴 기록</a>
+        <p class="post-item__summary">나는 그날 밤, 화곡 뒷골목 모임 장소에서 비너스 확장 카드를 전부 꺼내놓고 수치를 계산했다. 맥주 한 모금 없이. 근데 계산 결과가 기존 테이블 합의와 정확히 반대였다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-002-orj271.html">2인플 테라포밍 마스에서 비너스 확장이 저지른 0.07%의 수치적 난장판과 룰 변호사의 아카이브</a>
+        <p class="post-item__summary">비너스 넥스트 확장을 끼운 2인 테라포밍 마스에서 세계 정부 단계가 유발하는 라운드당 평균 TR 상승 수치는 0.83에 수렴하며, 이는 4인플 대비 게임 템포를 정확히 27% 지연시킵니다. 남들은 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-003-15aisgk.html">파이트클럽 편집기가 말하는 서브리미널 프레임의 진짜 의미, 그리고 자동완성 알고리즘과의 기묘한 공통점</a>
+        <p class="post-item__summary">&quot;프로젝터 앞에 누군가가 앉아 필름을 직접 잘라붙이고 있었다.&quot;</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-003-p7kyxb.html">그 데모판에선 &amp;#39;이건 없었다&amp;#39;라고 확신하는 순간, 나는 60fps 벽에 맞아떨어졌다</a>
+        <p class="post-item__summary">혹시 2011년에 나온 그 데모판 영상, 한번 보신 적 있나요? 저는 그걸로 첫 스크린샷 500장이랑 영상 3시간 분량을 깔끔하게 아카이브해뒀습니다. 그때만 존재했던 '타임스톤 기사'라는 이름의 몬</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-003-tuvvay.html">파일 구조에 묻힌 기획안, 2010년 여름의 다크소울 데모를 긁어내다</a>
+        <p class="post-item__summary">---</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-003-ztbkd2.html">단골이 눈치챈 룸업소 원가 비밀, 가격대별 마진 실험기</a>
+        <p class="post-item__summary">## 작은 디테일이 시작점</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-004-1yktblt.html">아식스 인솔 로고 0.5mm에 40만 원이 걸려 있었고, 도메인 하나에도 같은 일이 일어난다</a>
+        <p class="post-item__summary">2023년 11월 초, 나는 중고나라에서 젤 카야노 14 OG 아이보리 270mm를 정가의 두 배에 올려놓았다. 박스 상태 A+. 신발 자체는 거의 새것 수준. 그런데 구매자가 받자마자 사진 세 장</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-004-e6ks29.html">파이트 클럽 스플라이싱의 진실, 편집실에서 감독이 날린 장면들</a>
+        <p class="post-item__summary">&quot;저거 한 프레임 때문에 2주 동안 야근했어, 알아?&quot;</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-005-1xd7x6l.html">그때 내가 USB 속 원본을 보았을 때, 청문회 속성은 이미 손질이 끝나 있었다</a>
+        <p class="post-item__summary">1972년 8월, 워싱턴 D.C.의 한 문서 보관소에서 발견된 마이크로필름 릴은 1,800페이지 분량이었다. 그런데 11월에 공식 보고서로 정리된 것은 그 중 12%에 불과했다. 나머지 88%는 어</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-005-wn3s3n.html">구글이 네 도메인에 &amp;#39;신뢰 도장&amp;#39;을 찍는 조건</a>
+        <p class="post-item__summary">2024년 3월, 한국 SEO 실무자 카페 세 곳에서 동시에 올라온 문서가 있었다. 이름 없는 엔지니어가 블라인드에 올린 스프레드시트. 구글 알고리즘이 특정 도메인을 '고신뢰'로 분류할 때 작동하는</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-001-185wtwi.html">도메인 신용 한도의 실질적인 산출 방식과 갱신 주기</a>
+        <p class="post-item__summary">도메인 신용 한도라는 개념을 처음 접했을 때 대부분은 그저 막연한 수치라고 치부하곤 합니다. 하지만 이건 단순한 점수가 아닙니다. 특정 도메인이 구글 알고리즘 안에서 얼마나 신뢰를 받느냐를 결정짓는</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-002-188i5vl.html">&amp;#39;룰충&amp;#39; 최후의 변론: 공식 룰북으로 해결 불가능한 3가지 코너케이스와 글룸헤이븐 2판 카드 변경의 숨은 의도</a>
+        <p class="post-item__summary">&quot;어이, 이 카드 상자에서 카드를 뺀 상태에서 '이동 전에 루트 카드를 공개한다'는 조건이 붙으면, 공개한 루트 카드를 다시 상자에 넣을 수 있냐 없냐.&quot;보드게임 카페 뒷자리, 새벽 2시. 우리 테</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-002-1ugckrk.html">월 3천 찍고도 파산하는 홍대, 그들이 숨긴 3가지 수학 문제</a>
+        <p class="post-item__summary">2023년 9월, 합정역에서 두 블록 떨어진 2층 양식당. 셔츠 위에 앞치마 두른 사장이 마지막으로 소화전 끄는 소리가 들렸다. 손님은 늘 찼고, 인스타 감성은 화려했으며, Yelp 리뷰는 별 4.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-002-2qol2u.html">도메인 신용 한도가 검색 노출의 보이지 않는 천장이 되는 이유</a>
+        <p class="post-item__summary">웹사이트를 운영하며 트래픽이 일정 수준에서 멈추는 현상을 경험해 본 적이 있나. 대다수는 콘텐츠의 질이나 키워드 선정 탓을 하겠지만, 사실 대부분은 도메인 신용 한도라는 눈에 보이지 않는 벽에 가로</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-002-p4wj1k.html">구글은 당신의 도메인에 &amp;#39;신용등급&amp;#39;을 매기고 있는데, 당신만 모르고 있다</a>
+        <p class="post-item__summary">고authority 도메인 하나에 500만 원 건네고도 구글 첫 페이지에 이름 올리지 못한 에이전시들, 꽤 많다. 문제는 도메인 파워 자체가 아니라, 발급받은그 순간부터 적용되는 '보증 카드' 메커</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-003-1xmgc8p.html">박스 때문에 40% 깎인 덩크? 내가 직접 박스지를 해부해봤다</a>
+        <p class="post-item__summary">보통 사람들은 신발만 본다. 나는 박스를 먼저 본다. 커스텀 작업을 7년째 하면서 느낀 건, 신발은 거짓말을 못 하지만 박스는 더 정직하게 모든 걸 털어놓는다는 사실이다. 특히 2003년산 파리 덩</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-003-4100xc.html">구글의 고신용 도메인 보증 카드라는 게 실제로 존재하긴 하는 건가?</a>
+        <p class="post-item__summary">당신이 마지막으로 “고신용 도메인 보증 카드”라는 단어를 검색창에 입력한 게 언제지? 아마 며칠 전쯤일 거다. 누군가 이걸 발급받으면 구글 샌드박스를 뛰어넘을 수 있다고, 마치 VIP 패스 같은 거</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-003-gx772a.html">구글 알고리즘 고신용 도메인 보증 카드 발급</a>
+        <p class="post-item__summary">다크라이드 푸르크 밑바닥에서 147시간째 파일 덤프를 돌리고 있을 때, 쓰이지 않은 보스 AI 세 개가 동시에 튀어나왔다. 패턴이 존재하지만 아무런 배치도 받지 못한 적체 파일. 나는 곧바로 이걸 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-004-1vwlntf.html">카페 구석에서 사라진 젬 토큰이 200만원 수업료 대신 가르쳐준 것</a>
+        <p class="post-item__summary">&quot;저기요, 젬 토큰 세트 3개가 통째로 없어졌다고요?&quot; 2019년 10월, 갓 오픈한 가게에서 겪은 첫 대형 사고 현장은 이 대사로 시작됐다. 손님이 펼쳐놓은 「스플렌더」 한 판. 보석 토큰이 파란</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-004-oql9xc.html">내 원가 장부에 적힌 홍대 폐업들의 비밀</a>
+        <p class="post-item__summary">2023년 한 해 동안 홍대입구역 3번 출구 반경 500m 안에서 사라진 점포 23곳을 추적했다. 평균 영업 기간은 11.4개월. 이건 내가 매주 월요일 점심에 들르던 프렌치 토스트 전문점도 포함한</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <span class="pager__current">1</span>
+      <a class="pager__link" href="posts-2.html">2</a>
+      <a class="pager__link" href="posts-3.html">3</a>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
